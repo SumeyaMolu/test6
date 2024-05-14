@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.topnav{
+    background-color: rgb(210, 126, 126);
+
+    overflow: hidden;
+}
+.topnav a{
+    color: dimgrey;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-align: left;
+}
