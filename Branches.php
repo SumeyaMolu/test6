@@ -1,7 +1,6 @@
-<?php require_once("db_connect.php");
- include_once("templates/headings.php"); ?>
+<?php include_once("templates/headings.php"); ?>
 <body>
-    <?php include_once("tempolates/nav.php"); ?>
+    <?php include_once("templates/nav.php"); ?>
     <div class ="banner">
 
     <h1>Our Branches</h1>
