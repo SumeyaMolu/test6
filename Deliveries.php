@@ -11,7 +11,7 @@
     VALUES ('$fname', '$lname', '$Telno')";
 
 if ($conn->query($insert_message) === TRUE) {
-  header("Location: selling.php");
+  header("Location: Deliveries.php");
   exit();
 } else {
   echo "Error: " . $insert_message. "<br>" . $conn->error;
