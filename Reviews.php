@@ -1,8 +1,8 @@
 <?php include_once("templates/headings.php"); ?>
 <body>
-    <?php include_once("tempolates/nav.php"); ?>
+    <?php include_once("templates/nav.php"); ?>
     <div class ="banner">
-        
+
     <h1>Reviews from Customers</h1>
     <p>Food is one of the basic needs of human being. It is essential for our survival.We cannot live without it.
      So we must always have good food. Good foodmeans the right kind of food for good health.It is nutritious. 

@@ -1,6 +1,6 @@
 <?php include_once("templates/headings.php"); ?>
 <body>
-    <?php include_once("tempolates/nav.php"); ?>
+    <?php include_once("templates/nav.php"); ?>
     <div class ="banner">
     
     <style>

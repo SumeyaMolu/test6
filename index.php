@@ -1,8 +1,8 @@
 <?php include_once("templates/headings.php"); ?>
 <body>
-    <?php include_once("tempolates/nav.php"); ?>
+    <?php include_once("templates/nav.php"); ?>
     <div class ="banner">
-        
+
     <h1 style="background-color: bisque;">Brief History About Restaurants</h1>
     <p>Dining facilities have a long history, dating back to the eighteenth century.
      The first restaurant believed to have opened in France in 1762, specialized in soups and other simple dishes (Walker, 2021). Although the restaurant wasn’t the first to offer a menu with a selection of options, 

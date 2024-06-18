@@ -1,19 +1,8 @@
 <?php include_once("templates/headings.php"); ?>
 <body>
-    <?php include_once("tempolates/nav.php"); ?>
+    <?php include_once("templates/nav.php"); ?>
     <div class ="banner">
-<body>
-    <div class="topnav"></div>
-    <a href="index.html">Home</a>
-    <a href="About.html">AboutUs</a>
-    <a href="Branches.html">Our Branches</a>
-    <a href="Deliveries.html">Deliveries</a>
-    <a href="Reviews.html">Reviews</a>
-    <a href="ContactUs.html">ContactUs</a>
-    <a href="Offers.html">CrazyOffers</a>
-    <a href="Box.html">Box</a>
-    <a href="People.html">People</a>
-    <a href="SignIn.html">Sign In</a>
+
 
     <div  class ="topnav-right">
         <a class="btn btn-secondary dropdown-toggle" 
