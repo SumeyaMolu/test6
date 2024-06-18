@@ -1,10 +1,26 @@
 <?php require_once("db_connect.php");
- include_once("templates/headings.php"); ?>
-<body>
-    <?php include_once("templates/nav.php"); ?>
-    <div class ="banner">
+ include_once("templates/headings.php");
+ include_once("templates/nav.php"); 
+    
+ if(isset($_POST["send_message"])){
+    $fname =mysqli_real_escape_string($conn, addslashes( $_POST["firstname"]));
+    $lname = mysqli_real_escape_string($conn, addslashes($_POST["lastname"]));
+    $Telno = mysqli_real_escape_string($conn, addslashes($_POST["email"]));
 
+    $insert_message = "INSERT INTO valuation(fname, lname, Telno)
+    VALUES ('$fname', '$lname', '$Telno')";
 
+if ($conn->query($insert_message) === TRUE) {
+  header("Location: selling.php");
+  exit();
+} else {
+  echo "Error: " . $insert_message. "<br>" . $conn->error;
+}
+
+$conn->close();
+}
+
+    ?>
     <h1>We Do Deliveries!!!!</h1>
     <p>In  an  uncommon  situation  like  this  coronavirus pandemic,  people  more  consider  their  health. 
          In purchasing  food, especially,  customers prefer  to order food  through online  applications and  trusted providers than directly visiting the restaurant [8] to avoid getting virus infected.
