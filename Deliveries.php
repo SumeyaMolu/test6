@@ -1,13 +1,13 @@
-<?php require_once("db_connect.php");
+<?php require_once("templates/db_connect.php");
  include_once("templates/headings.php");
  include_once("templates/nav.php"); 
     
  if(isset($_POST["send_message"])){
-    $fname =mysqli_real_escape_string($conn, addslashes( $_POST["firstname"]));
-    $lname = mysqli_real_escape_string($conn, addslashes($_POST["lastname"]));
-    $Telno = mysqli_real_escape_string($conn, addslashes($_POST["email"]));
+    $fname =mysqli_real_escape_string($conn, addslashes( $_POST["fname"]));
+    $lname = mysqli_real_escape_string($conn, addslashes($_POST["lname"]));
+    $Telno = mysqli_real_escape_string($conn, addslashes($_POST["Telno"]));
 
-    $insert_message = "INSERT INTO valuation(fname, lname, Telno)
+    $insert_message = "INSERT INTO deliveries(fname, lname, Telno)
     VALUES ('$fname', '$lname', '$Telno')";
 
 if ($conn->query($insert_message) === TRUE) {
@@ -36,7 +36,8 @@ First, it can enrich the literature on customer trust and loyalty in the context
     <label for="lname">Last name:</label><br>
     <input type="text" id="lname" name="lname"><br>
     <label for="Telno">Telephone number:</label><br>
-    <input type="text" id="Telno" name="Telno">
+    <input type="text" id="Telno" name="Telno"><br>
+    <input type="submit" name = "send_message" value = "submit "><br><br>
 </form>
 </body>
 </html>
