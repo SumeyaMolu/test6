@@ -1,15 +1,16 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db_name = "test6"; 
+//create the database connection using cinstants previously created
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+//Inserting constants content
+require_once "constants.php";
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+//create the database connection 
+$dbConn = new mysqli(HOSTNAME, HOSTUSER, HOSTPASS, DBNAME);
+
+//verify the connection
+if($dbConn->connect_error){
+  die("Connection failed: " .$dbConn->connect_error);
+}else{
+  print "The connection was successful!!! :-)";
 }
-echo "Connected successfully";
-?>
+http://localhost/test6/config/db_connect.php
