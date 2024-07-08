@@ -22,6 +22,6 @@ do{
 <?php
     //for loop
     for($r=3; $r<12; $r++){
-        print $r ."<br>";
+        print $r ."<br>"; 
     }
 ?>

@@ -8,7 +8,8 @@ USE test6;
 
 DROP TABLE IF EXISTS deliveries;
 CREATE TABLE IF NOT EXISTS deliveries(
-    fname bigint(11) NOT NULL AUTO_INCREMENT,
+    userId bigint(11) NOT NULL AUTO_INCREMENT,
+    fname varchar(50) NOT NULL DEFAULT '',
     lname varchar(50) NOT  NULL DEFAULT '',
     Telno varchar(50) NOT NULL DEFAULT '',
     created bigint(10) NOT NULL DEFAULT 0,
