@@ -2,7 +2,7 @@
  include_once("templates/headings.php");
  include_once("templates/nav.php"); 
     
- if(isset($_POST["Deliveries"])){
+ if(isset($_POST["deliveries"])){
     $fname =mysqli_real_escape_string($conn, addslashes( $_POST["fname"]));
     $lname = mysqli_real_escape_string($conn, addslashes($_POST["lname"]));
     $Telno = mysqli_real_escape_string($conn, addslashes($_POST["Telno"]));
